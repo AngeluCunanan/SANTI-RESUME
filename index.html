@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My resume</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://kit.fontawesome.com/3ef3559250.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<style>
+	@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --bg-clr: #6b7fba;
+  --white: #fff;
+  --rleft-bg: #9ab3eb;
+  --rright-bg: #fff;
+  --primary-text-clr: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: #9ab3eb;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--primary-text-clr);
+  padding: 0 20px;
+}
+
+h2 {
+  font-family: ariel;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume {
+  width: 800px;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+  background: var(--white);
+}
+
+.resume .resume_left {
+  width: 270px;
+}
+
+.resume .resume_right {
+  background: var(--rright-bg);
+  width: calc(800px - 270px);
+}
+
+.resume_left .r_profile_pic,
+.resume_right .r_namerole {
+  width: 100%;
+  height: 260px;
+  padding: 35px;
+}
+
+.resume_left .r_profile_pic {
+  background: #fff;
+}
+
+.resume_left .r_profile_pic img {
+  width: 100%;
+}
+
+.resume_left .r_left_sub {
+  padding: 35px;
+}
+
+.resume_left .r_left_sub > div:not(:last-child),
+.resume_right .r_right_sub > div:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.resume_left .r_aboutme p {
+  text-align: center;
+}
+
+.resume_left .r_skills ul li,
+.resume_left .r_skills ul li p:first-child,
+.resume_left .r_hobbies ul li p:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.resume_left .r_skills ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.resume_left .r_skills ul li p:first-child,
+.resume_left .r_hobbies ul li p:first-child {
+  width: 45px;
+  height: 45px;
+  background: var(--rleft-bg);
+  margin-right: 15px;
+  border-radius: 50%;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.resume_left .r_hobbies ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.resume_left .r_hobbies ul li {
+  margin-bottom: 10px;
+}
+
+.resume_left .r_hobbies ul li p:hover {
+  background: var(--rright-bg);
+}
+
+.resume_right .r_namerole p {
+  font-family: ariel;
+  font-size: 40px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.resume_right .r_namerole p:last-child {
+  font-size: 25px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.resume_right .r_info {
+  padding: 35px;
+  background: var(--white);
+}
+
+.resume_right .r_info ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume_right .r_info p {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.resume_right .r_right_sub {
+  padding: 35px;
+  padding-bottom: 0;
+}
+
+.resume_right .r_right_sub p {
+  color: #000000;
+}
+
+.resume_right .r_right_sub ul li {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.resume_right .r_right_sub ul li div:first-child {
+  width: 25%;
+  margin-right: 15px;
+}
+
+.resume_right .r_right_sub ul li div:last-child {
+  width: 75%;
+}
+
+.resume_right .r_right_sub p:first-child {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+
+</style>
+<section class="resume">
+	<div class="resume_left">
+	    <div class="r_profile_pic">
+	      <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.15752-9/422466634_365259519733324_6518221695070899127_n.png?_nc_cat=100&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeGg9OoPc8hN-vlLxZH8Xx56gcviKtX4Oo-By-Iq1fg6j-5rv4p1OdAhE2c8_VZ0uLssPtcxffVMq7JYXRloDCGN&_nc_ohc=e9psHx3dnT0AX8-ZKJz&_nc_ht=scontent.fmnl4-4.fna&oh=03_AdQPgXB26wQvhg7k-WMLxAYyJhhkRJR-5wNScV7CdPEeWQ&oe=65E6F8EB" alt="profile_pic">
+	    </div>
+	    <div class="r_left_sub">
+	      <div class="r_aboutme">
+	        <h2>About me</h2>
+	        <p>As a dedicated web developer, I bring a passion for coding and a strong expertise in front-end and back-end technologies. Proven ability to create dynamic and responsive websites, ensuring seamless user experiences. Detail-oriented, collaborative, and committed to staying current with evolving industry trends</p>
+	      </div>
+	      <div class="r_skills">
+	        <h2>Skills</h2>
+	        <ul>
+	          <li>
+	            <p><i class="fa-solid fa-code"></i></p>
+	            <p>Web Development</p>
+	          </li>
+	          <li>
+	            <p><i class="fa-solid fa-pen-nib"></i></p>
+	            <p>Web Designing</p>
+	          </li>
+	          <li>
+	            <p><i class="fa-solid fa-video"></i></p>
+	            <p>Video Editing</p>
+	          </li>
+	          <li>
+	            <p><i class="fa-solid fa-headphones"></i></p>
+	            <p>Sound Mixing</p>
+	          </li>
+	          <li>
+	            <p><i class="fa-solid fa-image"></i></p>
+	            <p>Photoshop Editing</p>
+	          </li>
+	        </ul>
+	      </div>
+	      <div class="r_hobbies">
+	        <h2>Hobbies</h2>
+	        <ul>
+	          <li>
+	            <p><i class="fa-solid fa-football"></i></p>
+	          </li>
+	          <li>
+	            <p><i class="fa-solid fa-plant-wilt"></i></p>
+	          </li>
+	          <li>
+	            <p><i class="fa-solid fa-book"></i></p>
+	          </li>
+	          <li>
+	            <p><i class="fa-solid fa-bicycle"></i></p>
+	          </li>
+	          <li>
+	            <p><i class="fa-solid fa-chess"></i></p>
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
+	</div>
+	<div class="resume_right">
+	    <div class="r_namerole">
+	      <p>John Michael P. Zabala</p>
+	      <p class="role">WEB DEVELOPER</p>
+	    </div>
+	    <div class="r_info">
+	      <ul>
+	        <li>
+	          <p>zabalajohnmichael@gmail.com</p>
+	        </li>
+	        <li>
+	          <p>+63 99832789107</p>
+	        </li>
+	      </ul>
+	    </div>
+	    <div class="r_right_sub">
+	      <div class="r_education">
+	        <h2>Education</h2>
+	        <ul>
+	          <li>
+	            <div class="r_ed_left">
+	              <p>2009 - 2015</p>
+	            </div>
+	            <div class="r_ed_right">
+	              <p>Alabang Elementary School</p>
+	            </div>
+	          </li>
+	          <li>
+	            <div class="r_ed_left">
+	              <p>2015 - 2019</p>
+	            </div>
+	            <div class="r_ed_right">
+	              <p>Pedro E. Diaz High School </p>
+	            </div>
+	          </li>
+	          <li>
+	            <div class="r_ed_left">
+	              <p>2020 - 2021</p>
+	            </div>
+	            <div class="r_ed_right">
+	              <p>Cupang Senior High School</p>
+	            </div>
+	            <li>
+	            <div class="r_ed_left">
+	              <p>2023 - 2027</p>
+	            </div>
+	            <div class="r_ed_right">
+	              <p>Pamantasan ng Lungsod ng Muntinlupa</p>
+	            </div>
+	          </li>
+	          </li>
+	        </ul>
+	      </div>
+	      <div class="r_jobs">
+	        <h2>Work Experience</h2>
+	        <ul>
+	          <li>
+	            <div class="r_ed_left">
+	              <p>2027 - 2030</p>
+	            </div>
+	            <div class="r_ed_right">
+	              <p>Back End Developer</p>
+	              <p>A proven track record in backend development, I bring a wealth of expertise to the table. My professional journey has equipped me with a deep understanding of server-side technologies, robust database management, and efficient API integration. Meticulous in code optimization and troubleshooting, I am adept at crafting scalable and high-performance solutions that seamlessly meet the demands of complex projects. My commitment to staying abreast of industry trends ensures that I deliver cutting-edge and reliable backend systems, making me an invaluable asset to any development team.</p>
+	            </div>
+	          </li>
+	      </div>
+	    </div>
+	</div>
+</section>
+
+</body>
+</html>
